@@ -171,7 +171,7 @@ def player_numbers(team)
       data.each do |key, value|
         if key == :players
           value.each do |player|
-    player[:number] << output
+    output << player[:number]
    end
  end
  end
