@@ -168,6 +168,7 @@ def player_numbers(team)
   game_hash.map do |teams, data|
     if data[:team_name] == team
     return data[:players][:number]
+    binding.pry
    end
  end
  end
