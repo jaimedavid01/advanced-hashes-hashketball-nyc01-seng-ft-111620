@@ -171,8 +171,11 @@ def player_numbers(team)
       data.each do |key, value|
         if key == :players
           value.each do |player|
-            
     player[:number] << output
    end
  end
+ end
+ end
+ end
+ output
  end
