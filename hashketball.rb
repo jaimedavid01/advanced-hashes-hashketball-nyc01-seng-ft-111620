@@ -163,4 +163,8 @@ def team_colors(team)
  end
 
 def player_numbers(team)
- 
+  game_hash.map do |teams, data|
+    if data[:team_name] == team
+    return data[:players][:number]
+   end
+ end
